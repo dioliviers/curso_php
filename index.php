@@ -1,14 +1,8 @@
 <?php
-// Não é case sensitive
-    echo "Diogo <br>";
-    echo "Oliveira <br>";
-    echo "Santos <br>";
+    echo "Uma linha <br>";
+    echo "Duas Linhas <br>";
 
-// É case sensitive
-
-$nome= "Diogoh";
-$NOME= "teste";
-echo $nome;
-echo "<br>";
-echo $NOME;
+        if( 5 > 2 ){
+            echo "Estou dentro do if";
+        };
 ?>
