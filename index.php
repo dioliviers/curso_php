@@ -1,19 +1,16 @@
 <?php
-    /* exibe numeral 5 */
-    echo 5;
-    echo "<br>";
-    /* soma */
-    echo 5 + 7;
-    echo "<br>";
-    /* exibe numero negativo */
-    echo -12;
-    echo "<br>";
-    /* exibe o resultado de 5-12 */
-    echo 5 - 12;
-    /* armazena o numeral 5 na variavel N */
-    $n = 5;
+    
+    if(is_int(5)){ /* true */
+        echo "é um inteiro <br>";
+    };
 
-    echo "<br>";
-    /* exibe o conteúdo da variavel N */
-    echo $n;
+    if(is_int("Não é um inteiro")){ /* false */
+        echo "é um inteiro <br>";
+    };
+
+    $a = 10;
+
+    if(is_int($a)){ /* true, porque o conteúdo da variável é um número inteiro */
+        echo "É um inteiro ";
+    };
 ?>
