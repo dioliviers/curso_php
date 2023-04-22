@@ -1,8 +1,11 @@
 <?php
-    echo "Uma linha <br>";
-    echo "Duas Linhas <br>";
+    /* Essa variável contém o nome da pessoa */
+    $nome = "Diogo de Oliveira";
+    /* essa variável contém a idade da pessoa */
+    $idade = 29;
+    /* Essa variavel contém a profissão da pessoa */
+    $profissao = "Programador";
+    /* O comando echo exibe o conteúdo da variável */
+    echo  $profissao;
 
-        if( 5 > 2 ){
-            echo "Estou dentro do if";
-        };
 ?>
