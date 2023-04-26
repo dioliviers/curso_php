@@ -10,6 +10,6 @@
         if(is_float($c)){
             echo "a variável C $c é um float também";
         }else {
-            echo " A variável C não é um float"
+            echo " A variável C não é um float";
         };
 ?>
