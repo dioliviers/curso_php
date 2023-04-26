@@ -1,10 +1,15 @@
 <?php
-   $a = 10;
-   $b = 1.5;
-
-   if(is_float($b)){ /* is_float();Verifica se o número da variavel é um número flutuante e retorna um true e false e mediante essa resposta podemos manipular via codigo */
-    echo "A variável $b é um float"; 
-   }else{
-    echo " Nâo existe o númeral float";
-   }
+ $a = 1.5;
+ $b = 1.8;
+ $c = 2.0;
+    
+    echo "float 1 $a";
+        echo "<br>";
+    echo "float 2 $b";
+        echo "<br>";
+        if(is_float($c)){
+            echo "a variável C $c é um float também";
+        }else {
+            echo " A variável C não é um float"
+        };
 ?>
