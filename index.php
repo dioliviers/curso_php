@@ -1,11 +1,8 @@
 <?php
-    echo "Verifica texto de aspas duplas <br> ";/* exibindo string e quebrando linha */
-    echo "Verifica texto em aspas simples <br> ";
-    echo 'Ele disse: "olá" <br>'; /* exibindo string e com as aspas duplas destacando uma palavra da string */
-    echo 'Ele disse: "Olá" <br>';
-
-    $idade = 29; 
-
-    echo "Diogo tem $idade anos <br>";  /* aspas duplas você consegue chamar uma váriável e exibir seu valor */
-    echo 'Diogo tem $idade anos'; /*  com aspas simples não é possível. */
+    $a = "olá mundo !";
+        if(is_string($a)){ /* verifica se o dado recebido é uma string , se for ele retorna o valor da variável, caso contrario entra no else */
+            echo $a;
+        }else{
+            echo "não é string";
+        }
 ?>
