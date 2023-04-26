@@ -1,15 +1,11 @@
 <?php
- $a = 1.5;
- $b = 1.8;
- $c = 2.0;
-    
-    echo "float 1 $a";
-        echo "<br>";
-    echo "float 2 $b";
-        echo "<br>";
-        if(is_float($c)){
-            echo "a variável C $c é um float também";
-        }else {
-            echo " A variável C não é um float";
-        };
+    echo "Verifica texto de aspas duplas <br> ";/* exibindo string e quebrando linha */
+    echo "Verifica texto em aspas simples <br> ";
+    echo 'Ele disse: "olá" <br>'; /* exibindo string e com as aspas duplas destacando uma palavra da string */
+    echo 'Ele disse: "Olá" <br>';
+
+    $idade = 29; 
+
+    echo "Diogo tem $idade anos <br>";  /* aspas duplas você consegue chamar uma váriável e exibir seu valor */
+    echo 'Diogo tem $idade anos'; /*  com aspas simples não é possível. */
 ?>
