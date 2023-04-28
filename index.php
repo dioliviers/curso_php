@@ -1,8 +1,16 @@
 <?php
-    $a = "olá mundo !";
-        if(is_string($a)){ /* verifica se o dado recebido é uma string , se for ele retorna o valor da variável, caso contrario entra no else */
-            echo $a;
-        }else{
-            echo "não é string";
+    echo true; /* verdadeiro */
+
+    if (true){ /* aqui colocamos o bollean direto na expressão */
+        echo "verdadeiro ! <br>"; 
+    }
+
+    if (5 > 2){ /* retorna true (verdadeiro ou false caso não seja com a logica da expressão) */
+        echo "é verdadeiro <br>";
+    }
+
+    $pode_entrar = true; /* Pode entrar é true */
+        if($pode_entrar){ /* se pode entrar == true ele exibe o conteúdo do bloco if. */
+            echo "Pode entrar pau nu cu";
         }
 ?>
