@@ -1,17 +1,20 @@
 <?php
-    $carro = [
-        "nome" => "Civic", 
-        "marca" => "honda",
-        "ano" => 1998,
-        "blindado" => false
+    class Pessoa { /* molde */
+        
+        function falar(){ /* função falar */
+            echo "Olá pessoal";
+        }
+        
+    }
+    $diogo= new Pessoa(); /* criamos uma nova pessoa através do molde PESSOA da classe Pessoa */
+    $diogo ->nome = "Diogo"; /* Inseridmos um atributo nome com um valor na variável diogo da classe pessoa */
 
-    ];
-
-    print_r ($carro);
-
-    $marca =$carro['marca']; /* criamos uma variável através de um elemento de um array */
-    $ano = $carro['ano'];
+    echo $diogo ->nome; /* exibimos o valor da variável nome */
+     
+    $pedro = new Pessoa(); /* criamos uma nova pessoa */
+    $pedro -> nome = "Pedro Henrique ";
     echo "<br>";
+    echo $pedro ->nome;
 
-    echo "o carro é da marca $marca e é do ano $ano"; /* exibimos as variáveis com os valores extraidos do array*/
     
+?>
