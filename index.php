@@ -1,12 +1,17 @@
 <?php
-    $arr = [ 'nome' => 'thor', 'patas' => 4, 'cor' => 'Marrom' ]; /* inserido no array CHAVE e VALOR, quando
-    for chamado a chave na variável do array ele exibira o valor atribuido a chave. */
+    $carro = [
+        "nome" => "Civic", 
+        "marca" => "honda",
+        "ano" => 1998,
+        "blindado" => false
 
-    echo $arr["nome"];/* exibe o valor da chave nome */
+    ];
+
+    print_r ($carro);
+
+    $marca =$carro['marca']; /* criamos uma variável através de um elemento de um array */
+    $ano = $carro['ano'];
     echo "<br>";
-    echo $arr["patas"];/* exibe o valor da chave pata */
-    echo "<br>";
-    print_r($arr);/* com o print_r ele exibe a chave e o valor atribuido na variavel */
 
-
-?>
+    echo "o carro é da marca $marca e é do ano $ano"; /* exibimos as variáveis com os valores extraidos do array*/
+    
