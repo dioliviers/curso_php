@@ -15,6 +15,7 @@
     $pedro -> nome = "Pedro Henrique ";
     echo "<br>";
     echo $pedro ->nome;
-
+    echo "<br>";
+    $diogo ->falar();/* Para chamar as ações temos que chamar o objeto e atribuimos a ação da função */
     
 ?>
