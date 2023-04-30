@@ -1,21 +1,12 @@
 <?php
-    class Pessoa { /* molde */
-        
-        function falar(){ /* função falar */
-            echo "Olá pessoal";
-        }
-        
-    }
-    $diogo= new Pessoa(); /* criamos uma nova pessoa através do molde PESSOA da classe Pessoa */
-    $diogo ->nome = "Diogo"; /* Inseridmos um atributo nome com um valor na variável diogo da classe pessoa */
+    echo NULL;
+    $nome = NULL; /* inserido valor nulo */
 
-    echo $diogo ->nome; /* exibimos o valor da variável nome */
-     
-    $pedro = new Pessoa(); /* criamos uma nova pessoa */
-    $pedro -> nome = "Pedro Henrique ";
-    echo "<br>";
-    echo $pedro ->nome;
-    echo "<br>";
-    $diogo ->falar();/* Para chamar as ações temos que chamar o objeto e atribuimos a ação da função */
+    if(is_null($nome)){ /* se o valor da variável for nulo ele exibe o conteúdo do echo dentro do bloco*/
+        echo "O valor é nulo !";
+    };
     
+    $nome = "Diogo"; /* aqui alteramos o valor nulo da variavel com um valor e exibimos abaixo com um echo */
+        echo "<br>";
+        echo $nome;
 ?>
