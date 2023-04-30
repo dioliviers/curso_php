@@ -1,12 +1,20 @@
 <?php
-    echo NULL;
-    $nome = NULL; /* inserido valor nulo */
-
-    if(is_null($nome)){ /* se o valor da variável for nulo ele exibe o conteúdo do echo dentro do bloco*/
-        echo "O valor é nulo !";
-    };
-    
-    $nome = "Diogo"; /* aqui alteramos o valor nulo da variavel com um valor e exibimos abaixo com um echo */
+    $teste = "Algum texto"; /* Armazenamos uma String na variavel texte */
+        echo $teste;
         echo "<br>";
-        echo $nome;
+    $num = 10; /* Armazenamos um inteiro na variavel num */
+        echo $num;
+        echo "<br>";
+    
+    $_nome = "Diogo"; /* ajustamos a identificação da variável para melhor leitura */
+        echo "<br>";
+        echo $_nome;
+
+        echo "<br>";
+    
+    $velocidade_Maxima = 100;
+        echo $velocidade_Maxima;
+        echo "<br>";
+    $velocidade_Minima = 100;
+        echo $velocidade_Minima;
 ?>
