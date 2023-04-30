@@ -1,20 +1,15 @@
 <?php
-    $teste = "Algum texto"; /* Armazenamos uma String na variavel texte */
-        echo $teste;
-        echo "<br>";
-    $num = 10; /* Armazenamos um inteiro na variavel num */
-        echo $num;
-        echo "<br>";
-    
-    $_nome = "Diogo"; /* ajustamos a identificação da variável para melhor leitura */
-        echo "<br>";
-        echo $_nome;
+/* EXERCICIO 
+Crie um arquivo PHP
+Crie tres variaveis com tipos de dados direfentes 
+Imprima estas variáveis*/
+    $velocidade = 100;
+    $marca = "Ferrari";
+    $itens = [ "Teto solar", "Motor 2.0", "Porta malas grande", "Piloto automático" ];
 
-        echo "<br>";
-    
-    $velocidade_Maxima = 100;
-        echo $velocidade_Maxima;
-        echo "<br>";
-    $velocidade_Minima = 100;
-        echo $velocidade_Minima;
+    echo $velocidade;
+    echo "<br>";
+    echo "marca";
+    echo "<br>";
+    print_r($itens);
 ?>
