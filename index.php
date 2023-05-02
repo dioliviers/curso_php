@@ -1,15 +1,17 @@
 <?php
 /* EXERCICIO 
-Crie um arquivo PHP
-Crie tres variaveis com tipos de dados direfentes 
-Imprima estas variáveis*/
-    $velocidade = 100;
-    $marca = "Ferrari";
-    $itens = [ "Teto solar", "Motor 2.0", "Porta malas grande", "Piloto automático" ];
+Crie duas variáveis com números
+Crie uma terceira veriavel com a soma desses dos números 
+exiba*/
+  $num1 = 10;
+  $num2 = 20;
+  $soma = $num1 + $num2;
+  echo $soma;
 
-    echo $velocidade;
-    echo "<br>";
-    echo "marca";
-    echo "<br>";
-    print_r($itens);
+  function somar ($soma){  /* utilizando os resultados em uma função */
+    echo "O resultado da soma é $soma";
+  }
+  echo "<br>";
+  echo somar($soma); /* retornando o valor de soma ao chamar a função somar */
+  
 ?>
