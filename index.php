@@ -1,25 +1,34 @@
 <?php
-/* ESCOPO (local) */
+/* ESCOPO (global) */
+    $teste = "asd";
+    echo "$teste global 1 <br>";
 
-    $x= 10; /* variavel global */
-    
-    function teste (){
-        $x = 5; /* variável com o valor local (vale apenas dentro da função) */
-        echo "local $x ";
-    }
-    teste(); /* exibe o valor da variavel local */
-    echo "variável global é: $x <br>";/* exibe o valor da variável global */
+        if(5>2){
+            $teste = "dsa";
+            echo "$teste teste do if";    
+        }
     echo "<br>";
-
+    echo "$teste global 2 <br>"; /* aqui a variavel fica alterada por conta da alteração feita no 
+    bloco do if */
     
-    function testando(){
-        $x=2;
-        echo "Testando local $x ";
+    function testandoGlobal(){
+        global $teste; /* inserindo a variável no escopo global a variavel fica valendo o mesmo valor mesmo fora da função
+        a não ser que a mesma seja alterada */
 
+        $teste = 3;
+
+        echo "$teste global função <br>";
     }
-    
-    teste();
+    testandoGlobal(); /* chamando a função com a variável tipada com o escopo global */
     echo "<br>";
-    testando();
+    echo $teste; /* chamando o valor da variavel tipada com escopo global */
+    echo "<br>";
+    $teste = "alterei o valor da variavel no escopo global"; /* alterei o valor da variavel teste */
+    echo $teste; /* chamei a variável teste com o valor alterado */
+
+
+    
+
+    
 
 ?>
