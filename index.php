@@ -1,28 +1,11 @@
 <?php
-/* ESCOPO (STATIC) */
+/* ESCOPO (Parâmetros de função) */
 
-    function teste (){
-        $a = 0; 
-        $a++; 
-
-        echo "$a <br>";
-        
-    }
-    /* aqui ele manteem o valor a cada chamada */
-    teste(); /* 1 */
-    teste();/* 1 */
-    teste();/* 1 */
-    function testeStatic(){
-        static $a = 0; /* com  o static ele mantém o valor*/
-        $a++;  /* aqui ele incrementa o proximo numeral mantendo o valor anterior */
-
-        echo "$a <br>";
-    };
-    testeStatic();/* 1 */
-    testeStatic();/* 2 */
-    testeStatic();/* 3 */
-    testeStatic();
-
+    function soma( $a, $b ){ /* criamos variáveis como parametros */
+        echo $a + $b; /* utilizamos os valores da variável para realizar uma soma */
+    }; 
  
-
+    soma( 2, 4); /* aqui chama */
+    soma( 6, 8);
+    soma( 10,10);
 ?>
