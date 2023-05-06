@@ -1,15 +1,16 @@
 <?php
-    /* concatenação */
-    
-    echo "Testando a concatenação";
-    echo "<br>";
-    echo "testando" . " a " . "concatenação";
-    echo "<br>";
+    /* exercicio 14
+    Crie uma variável de saudação, nome e outra de sobrenome
+    imprima a concatenacao com echo de saudação, nome e sobrenome */
 
-    $t = "testando ";
-    echo "<br>";
-    $c = "Concatenação"; 
+    $saudacao = " Seja bem vindo: ";
+    $nome = " Diogo ";
+    $sobrenome = " Oliveira ";
+    $frase = " Olá !" . $saudacao . $nome . $sobrenome;
+
+    echo $frase;
     
-    echo $t . " a " . $c;
+
+    
 
 ?>
