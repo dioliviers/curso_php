@@ -1,17 +1,14 @@
 <?php
-/* Ordem dos operadores*/
-
-    echo (3+5) *2;
-    echo 3/2;
-    echo 3-5;
-
-    $a = 5;
-    $b = 2;
-    $c = 10;
+/* Ordem dos operadores aritmeticos*/
+    $soma = 5+5;
+    echo $soma . "<br>";
     
-    echo $a + $b / $c;
-    echo "<br>";
-    echo $c +$b / $a;
-
+    $subtracao = 10-2;
+    echo $subtracao . "</br>";
     
+    $multi = 2*199;
+    echo $multi . "</br>";
+
+    $divisao = 123/8;
+    echo $divisao . "</br>";
 ?>
