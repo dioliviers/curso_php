@@ -1,24 +1,20 @@
 <?php
-    /* utilizando auto incremento */
+    /* exercicio 15 
+    fazendo validação através de um numeral
+    se o valor inserido for diferente de um número retorna a notificação
+    se o valor for maior cai no elseif
+    se o valor for menor cai no outro elseif */
     
-    $x= 0;
-    $y= 0;
+    $idade_minima = 18;
+    $idade = 17;
 
-    $x++;
-    $y= $y +1;
-
-    echo " x " . $x . "<br>";
-    echo " y " . $y . "<br>";
-    
-    $n = 10;
-    $m = 10;
-
-    $n--;
-    $m = $m -1;
-
-    echo " n " . $n . "<br>";
-    echo " m " . $m . "<br>";
-
-
-
+    if (!is_numeric($idade)){
+        echo "Digite um número para continuar";
+    }
+    elseif($idade >= $idade_minima){
+        echo "Você tem $idade anos, pode entrar";
+    }elseif($idade < $idade_minima){
+        echo "Você tem $idade, não pode entrar";
+        
+    }
 ?>
