@@ -1,16 +1,24 @@
 <?php
-    /* exercicio 14
-    Crie uma variável de saudação, nome e outra de sobrenome
-    imprima a concatenacao com echo de saudação, nome e sobrenome */
-
-    $saudacao = " Seja bem vindo: ";
-    $nome = " Diogo ";
-    $sobrenome = " Oliveira ";
-    $frase = " Olá !" . $saudacao . $nome . $sobrenome;
-
-    echo $frase;
+    /* utilizando auto incremento */
     
+    $x= 0;
+    $y= 0;
 
+    $x++;
+    $y= $y +1;
+
+    echo " x " . $x . "<br>";
+    echo " y " . $y . "<br>";
     
+    $n = 10;
+    $m = 10;
+
+    $n--;
+    $m = $m -1;
+
+    echo " n " . $n . "<br>";
+    echo " m " . $m . "<br>";
+
+
 
 ?>
