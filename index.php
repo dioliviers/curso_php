@@ -1,20 +1,17 @@
 <?php
-    /* exercicio 15 
-    fazendo validação através de um numeral
-    se o valor inserido for diferente de um número retorna a notificação
-    se o valor for maior cai no elseif
-    se o valor for menor cai no outro elseif */
-    
-    $idade_minima = 18;
-    $idade = 17;
+    /* Operador de diferença */
+    $a = 14;
+    $b = 15;
 
-    if (!is_numeric($idade)){
-        echo "Digite um número para continuar";
+    if( $a != $b ){ /* se o a for diferente da variável B ele vai exibir olá mundo */
+        echo "Olá mundo <br>";
     }
-    elseif($idade >= $idade_minima){
-        echo "Você tem $idade anos, pode entrar";
-    }elseif($idade < $idade_minima){
-        echo "Você tem $idade, não pode entrar";
-        
+
+    if( $a != 14 ){ /*  se o A for igual o valor 14 ele exibe o valor abaixo senão ele entra no else */
+        echo "A variavel é diferente do numeral 3 <br>";
+    }else{
+        echo "A variável é igual ao valor inserido";
     }
+
+
 ?>
