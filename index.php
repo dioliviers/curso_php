@@ -1,17 +1,25 @@
 <?php
-    /* Operador de diferença */
-    $a = 14;
-    $b = 15;
+    /*  Operadores de expressão */
+    $a =  (int) "12";
+    echo $a;
+    echo "<br>";
 
-    if( $a != $b ){ /* se o a for diferente da variável B ele vai exibir olá mundo */
-        echo "Olá mundo <br>";
+    echo $a + 12 ;
+
+    if ( $a === 12 ) {
+        echo " <br> A é idêntico a 12 ";
+    } 
+
+    $b = (float) "3.53515";
+
+    if ( $b === 3.53515 ) {
+        echo " <br> B é idêntico a 3.35 ";
+    } 
+
+    $c = (string) 34;
+    echo "<br>";
+    
+    if ( $c === "34" ) {
+        echo "O operador C é idêntico a 34";
     }
-
-    if( $a != 14 ){ /*  se o A for igual o valor 14 ele exibe o valor abaixo senão ele entra no else */
-        echo "A variavel é diferente do numeral 3 <br>";
-    }else{
-        echo "A variável é igual ao valor inserido";
-    }
-
-
 ?>
