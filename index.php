@@ -1,11 +1,13 @@
 <?php
-    /* Operadores ternarios */
+    /* Exercicio 20
+     Faça uma condicional utilizando operadores ternarios 
+     */
 
-    //true
-    echo 20 > 10 ? "Olá mundo" : "Deu false" ;
+     $a = 10;
+     $b = 5;
 
-    //false
+     echo $a <= $b ? "A é menor ou igual a B <br>" : "B é menor que A <br> ";
 
-    echo "<br>";
-    echo 20 > 50 ? "Olá mundo" : "Deu false" ;
+     echo $b >= $a ? " B é maior ou igual a A" : "B é menor ou igual a A";
+
 ?>
