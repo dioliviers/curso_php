@@ -1,30 +1,28 @@
 <?php
+    /* Exercicio 25
+    Crie variáveis com números e outras com string 
+    Faça um if checando se é um número;
+    caso for, atribua a multiplicação deste número por 2 em outra variável;
+    Crie outro if, que checa se o novo número é maior que 100;
+    Se sim, imprima uma mensagem*/
 
-    /* Exercicio 22
-    - Crie variáveis que recebem idades;
-    - Cheque se as idades são maiores ou iguais a 18,
-    caso seja TRUE imprima uma mensagem que a pessoa é maior de idade.
-     */
-     $validador = '';
-     $idade = $validador;
-     $idade = 'oi';
-
-     $idade2 = $validador;
-     $idade2 = 20;
-   
-        function verificaIdade($validador){
-            if(empty($validador)){
-                echo "é necessário preencher um valor para validação <br>";
-            }
-            elseif( !is_numeric($validador)){
-                echo "insira apenas números <br> ";
-            }
-            elseif($validador >= 18){
-                echo "Pode entrar maior de idade <br> ";
-            }elseif ($validador < 18 ) {
-                echo " Menor de idade <br> ";
-            }
+    $num1 = 101;
+    $num2 = 40;
+    $teste = 'teste';
+    if ( is_int($num1) || is_float($num1) ){
+        $mult = $num1 * 2;
+        if( $mult > 100 ) {
+            echo 'o número é maior que 100 <br> ';
+        }else { 
+            echo ' O número é menor que 100 <br> ';
         }
-    verificaIdade($idade);
-    verificaIdade($idade2);
+    };
+    if ( is_int($num2) || is_float($num2) ){
+        $mult = $num2 * 2;
+        if( $mult > 100 ) {
+            echo 'o número é maior que 100 <br> ';
+        }else { 
+            echo ' O número é menor que 100 <br> ';
+        }
+    };
 ?>
