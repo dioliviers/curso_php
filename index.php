@@ -1,11 +1,17 @@
 <?php
-    $x= 0;
-    while($x < 10 ){
-       echo "0 X não é $x <br>";
-       $x++;
-       if($x === 5){
-        echo "Encontramos o valor";
-        break;
+    $i = 1;
+    while($i <= 10){
+       echo "O loop externo $i <br>";
+       
+       $j = 1;
+       while($j <= 5){
+        echo "looping interno $j <br>";
+
+        $j++;
        }
-    };
+
+
+       $i++;
+    }
+
 ?>
