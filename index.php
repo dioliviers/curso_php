@@ -1,17 +1,16 @@
 <?php
-    include_once "backend.php";
+    function soma(){
+        $a = 5;
+        $b = 10;
+        echo $a + $b ."</br>" ;
+    }
+/* invocando função soma */
+    soma();
+
+    /* função nativa do php que deixa a string sempre em uppercase */
+    echo strtoupper ('teste');
 ?>
 
-<h1> Seja bem-vindo ao nosso site </h1>
-<p><?= $nome; ?> veja as nossas ofertas </p>
-
-<h2> Confira nossos produtos </h2>
-
-<ul>
-    <?php foreach ( $produtos as $produtos ) : ?>
-        <li> <?= $produtos ?></li>
-    <?php endforeach; ?>
-</ul>
 
 
     
