@@ -1,11 +1,13 @@
 <?php
-/* exercicio 33 */
-    $nome = "Diogo";
-    $idade = 29;
-  function dados ($nome,$idade){
-    echo "Olá eu sou o $nome e tenho $idade ";
-  };
-  dados($nome,$idade);
+/* exercicio 34 verificar se o numero é par ou impar */
+    function verificaNumero($num1){ 
+        if( $num1 %2 == 0 ){
+            echo "O número é par";
+        }else{
+            echo "O número é impar";
+        }
+    }
+    verificaNumero(2);
 
 ?>
 
